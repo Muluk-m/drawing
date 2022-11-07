@@ -32,28 +32,26 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#drawCanvas {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.helper-panel {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.helper-panel .helper-panel-button {
+  padding: 5px;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.helper-panel .helper-panel-button:hover {
+  color: skyblue;
 }
 
 @media (prefers-color-scheme: light) {
